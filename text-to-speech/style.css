@@ -1,0 +1,20 @@
+.voiceinator{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+
+button :first-of-type {
+    width: 90%;
+    text-align: right;
+}
+button :last-of-type {
+    width: 110%;
+    text-align: left;
+}

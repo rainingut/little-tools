@@ -1,0 +1,9 @@
+.acontent p {
+    text-indent: 2em;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin: 0.4rem 0;
+}
+#myMain{
+    max-height: 50vh;
+}

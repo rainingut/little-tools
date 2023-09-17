@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="voiceinator">
+        <label >Lang filter:<input type="text" value="taiwan" id="langFilter"></label>
+      
+        <select name="voice" id="voices">
+          <option value="">Select A Voice</option>
+        </select>
+      
+        <label for="rate">Rate:</label>
+        <input name="rate" type="range" min="0" max="3" value="1.7" step="0.1">
+      
+        <label for="pitch">Pitch:</label>
+      
+        <input name="pitch" type="range" min="0" max="2" step="0.1">
+        <textarea name="text" rows="14">
+            c8 c8 c8
+
+        </textarea>
+        <div style="display: flex; gap: 10px;margin-bottom: 10px;">
+            <button id="speak"> <span>▶️</span><span>Speak</span></button>
+            <button id="stop">  <span>⏹️</span><span>Stop</span></button>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <button id="pause"> <span>⏸️</span><span>Pause</span></button>
+            <button id="resume"><span>⏯️</span><span>Resume</span></button>
+        </div>
+<span>      </span>
+      </div>
+
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+#container{
+    margin: auto;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+  }
+  img{
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  /*input[readonly]*/
+  
+  #wrap p{
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
