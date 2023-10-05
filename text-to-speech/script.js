@@ -24,8 +24,8 @@ function voiceFilter(){
       .map(voice => `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`)
       .join("");
     // default select
-    voicesDropdown.value = voices[1]?.name;
-    msg.voice= voices[1]||voices[0];
+    voicesDropdown.value = voices[2]?.name;
+    msg.voice= voices[2]||voices[0];
 }
 function populateVoices(){
   allVoices = this.getVoices();
