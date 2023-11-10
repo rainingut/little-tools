@@ -14,6 +14,7 @@ function changeWords(dom){
     const content = dom.querySelector('#acontent')
     if(!content) return ;
     content.querySelectorAll('div').forEach(d=>d.innerText='')
+    content.querySelectorAll('a').forEach(d=>d.innerText='')
     
     content.querySelectorAll('p').forEach(p => {
         p.innerText = p.innerText
@@ -21,15 +22,21 @@ function changeWords(dom){
           .replaceAll('里','裡')
           .replaceAll('菲裡妮','菲里妮')
           .replaceAll('莫裡茲','莫里茲')
+          .replaceAll('古得裡斯海德','古得里斯海德')
           .replaceAll('裡昂','里昂')
           .replaceAll('芬裡吉尼','芬里吉尼')
+          .replaceAll('格裡森邁亞','格里森邁亞')
           .replaceAll('羅德裡希','羅德里希')
+          .replaceAll('埃維裡貝','埃維里貝')
+          .replaceAll('格傑弗裡德','格傑弗里德')
+          .replaceAll('都帕裡','都帕里')
           .replaceAll('培裡孚','培里孚')
           .replaceAll('頭發','頭髮')
           .replaceAll('發色','髮色')
           .replaceAll('發簪','髮簪')
           .replaceAll('發飾','髮飾')
           .replaceAll('髮生','發生')
+          .replaceAll('突髮','突發')
           .replaceAll('啰','囉')
           .replaceAll('腌制','醃製')
           .replaceAll('熏制','燻製')
@@ -46,6 +53,7 @@ function changeWords(dom){
           .replaceAll('暍','喝')
           .replaceAll('昵','暱')
           .replaceAll('采','採')
+          .replaceAll('精採','精采')
           .replaceAll('蔚房','廚房')
           .replaceAll('歓','歡')
           .replaceAll('(','（')
@@ -87,8 +95,10 @@ function changeWords(dom){
           .replaceAll('葯','藥')
           .replaceAll('帘','簾')
           .replaceAll('剋制','克制')
-          .replaceAll('','')
-          .replaceAll('','')
+          .replaceAll('回覆藥水','回復藥水')
+          .replaceAll('事迹','事跡')
+        //   .replaceAll('','')
+        //   .replaceAll('','')
       });
     return content;
 }
